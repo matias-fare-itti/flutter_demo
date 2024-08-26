@@ -68,6 +68,6 @@ jobs:
     # Upload generated apk to the artifacts.
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
-        with:
-          name: release-apk
-          path: ${{ env.AAB_PATH }}
+      with:
+        name: release-apk
+        path: ${{ env.AAB_PATH }}
