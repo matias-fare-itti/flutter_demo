@@ -76,8 +76,9 @@ jobs:
       - name: ⚙️ Generate freezed and injectable
         run: dart run build_runner build --delete-conflicting-outputs
 
-      - name: Generate l18n language
-        run: flutter gen-l10n
+      # Descomentar si se usa flutter_localizations
+      #- name: Generate l18n language
+      #  run: flutter gen-l10n
 
       # Build Android Bundle release file
       - name: 🔨 Build Apk Android
